@@ -5,9 +5,9 @@ from gym import spaces
 
 CODE_MARK_MAP = {0: ' ', 1: 'O', 2: 'X'}
 NUM_LOC = 9
-O_REWARD = 1
-X_REWARD = -1
-NO_REWARD = 0
+O_REWARD = 0
+X_REWARD = 0
+NO_REWARD = 1
 
 LEFT_PAD = '  '
 LOG_FMT = logging.Formatter('%(levelname)s '
