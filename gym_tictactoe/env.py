@@ -140,7 +140,7 @@ class TicTacToeEnv(gym.Env):
         return self._get_obs(), reward, self.done, None
 
     def _get_obs(self):
-        return self.board
+        return tuple(self.board), self.mark
 
     def render(self, mode='human', close=False):
         if close:
